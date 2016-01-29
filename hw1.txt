@@ -1,0 +1,16 @@
+1.	Change Directory
+Cd <destination_directory>
+2.	Create a Directory
+Mkdir <new_dir>
+3.	Rename a Directory
+Mv <old name>  <new name>
+4.	List the contents of a directory
+Ls 
+5.	Move a file to a new location
+Mv <file name with path> <destination>
+6.	Copy a file to a new location
+Cp  <filename> <destination>
+7.	Search for a string in a file
+Grep <string>  <filename>
+8.	Access the shell of a remote machine
+ssh <emote_server_name>  'bash -s' < localfile
