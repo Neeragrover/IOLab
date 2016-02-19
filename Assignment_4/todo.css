@@ -1,0 +1,40 @@
+
+#user-input-container{
+	width:100%;
+
+}
+.list-container {
+		border: 1px solid grey;
+		height: 80vh;
+		display: block;
+		width: 35%;
+		float: left;
+}
+#to-do-list{
+	border: 5px solid red;
+
+}
+#to-do-list button{
+	background-color: green;	
+	padding: 5px 3px;
+	border-radius: 5px;
+
+}
+
+#completed-items-list button{
+	background-color: red;
+	padding: 5px 3px;
+	border-radius: 5px;
+
+}
+#completed-items-list{
+	border: 5px solid green;
+	
+}
+.list-title{
+	padding-top: 25px;
+	padding-left: 15px;
+	float:left;
+	width: 40%;
+	font: italic bold 22px/30px Georgia, serif;
+}
