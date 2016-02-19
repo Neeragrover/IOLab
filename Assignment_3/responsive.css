@@ -1,0 +1,59 @@
+body {
+	font-size: 22px;
+}
+
+
+img {
+	max-width: 75%;
+	max-height: 75%;
+	border: 10px solid black;
+}
+
+
+h3 {
+	font-size: 1.33em;
+	font-weight: bold;
+	padding: 20px;
+}
+
+
+
+footer {
+/*	float: left;*/
+	margin-top: 2em;
+	clear: both;
+	text-align: center;
+	background-color: grey;
+	text-decoration: underline;
+
+}
+.main-container {
+	float: left;
+	width: 100%;
+	text-align: left;
+}
+
+@media (min-width: 400px) and (max-width: 1000px) {
+	.Mgmt	{
+		background-color: green;
+		width:100%;
+		float: center;
+		display: block;
+	
+	}
+	img {
+		width:100%;
+		float: center;
+		display: block;
+		}
+}
+
+@media (max-width: 400px) {
+	.Mgmt	{
+		background-color: red;
+		width:100%;
+		float: center;
+		display: block;
+	
+	}
+}
