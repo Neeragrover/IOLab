@@ -1,0 +1,29 @@
+.container {
+		border: 1px solid grey;
+		height: auto;
+		display: block;
+		width: 35%;
+		float: left;
+}
+/*#songs{
+	border: 5px solid red;
+
+}
+*/#songs button{
+	background-color: grey;	
+	padding: 5px 3px;
+	border-radius: 5px;
+
+}
+
+#playlist button{
+	background-color: blue;
+	padding: 5px 3px;
+	border-radius: 5px;
+
+}
+/*#playlist{
+	border: 5px solid green;
+	
+}
+*/
