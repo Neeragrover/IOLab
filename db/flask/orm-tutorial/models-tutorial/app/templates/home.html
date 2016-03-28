@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <h1>Welcome to ACME Aircraft Parts</h1>
+      <div class= "section">
+        <a href="{{ url_for('create_customer') }}">Add a Customer</a>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <h3>These are all of our awesome customers:</h3>
+        <table class="striped">
+          <thead>
+            <tr>
+              <th data-field="company">Company</th>
+              <th data-field="email">Email</th>
+              <th data-field="first_name">First Name</th>
+              <th data-field="last_name">Last_Name</th>
+              <th data-field="phone">Phone</th>
+            </tr>
+          </thead>
+          {% for customer in customers %}
+          <!-- {% for address in customer.addresses %}
+          {% endfor %} -->
+            <tr>
+              <td>{{ customer.company }}</td>
+              <td>{{ customer.email }}</td>
+              <td>{{ customer.first_name }}</td>
+              <td>{{ customer.last_name }}</td>
+              <td>{{ customer.phone }}</td>
+            </tr>
+          {% endfor %}
+        </table>
+        <h3>These are their addresses:</h3>
+        <table class="striped">
+          <thead>
+            <tr>
+              <th data-field="street_address">Street Address</th>
+              <th data-field="city">City</th>
+              <th data-field="state">State</th>
+              <th data-field="zip_code">Zip_Code</th>
+              <th data-field="country">Country</th>
+            </tr>
+          </thead>
+          {% for address in addresses %}
+            <tr>
+              <td>{{ address.street_address }}</td>
+              <td>{{ address.city }}</td>
+              <td>{{ address.state }}</td>
+              <td>{{ address.zip_code }}</td>
+              <td>{{ address.country }}</td>
+            </tr>
+          {% endfor %}
+        </table>
+        <h3>These are their orders:</h3>
+        <table class="striped">
+          <thead>
+            <tr>
+              <th data-field="parts_ordered">Parts_Ordered</th>
+              <th data-field="total_spent">Total_Spent</th>
+            </tr>
+          </thead>
+          {% for order in orders %}
+            <tr>
+              <td>{{ order.parts_ordered }}</td>
+              <td>{{ order.total_spent }}</td>
+          {% endfor %}
+        </table>
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+{% endblock %}

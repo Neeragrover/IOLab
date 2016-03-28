@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class= "section">
+      <a href="{{ url_for('display_customer') }}">Home</a>
+    </div>
+    <h2>Add Customer to Our Database</h2>
+    <form action="" method="post" name="login">
+      {{ form.hidden_tag() }}
+      <div class="divider"></div>
+      <div class="section">
+        <p>
+          Company :<br>
+          {{ form.company(size=120) }}<br>
+        </p>
+        <p>
+          Customer email:<br>
+          {{ form.email(size=120) }}<br>
+        </p>
+        <p>
+          First Name:<br>
+          {{ form.first_name(size=120) }}<br>
+        </p>
+        <p>
+          Last_Name:<br>
+          {{ form.last_name(size=120) }}<br>
+        </p>
+        <p>
+          Phone:<br>
+          {{ form.phone(size=120) }}<br>
+        </p>
+      </div>
+      <h2>Add Customer Address </h2>
+      <div class="divider"></div>
+      <div class="section">
+        <!-- Additional form fields for the Address should go here -->
+          <p>
+          Street_address :<br>
+          {{ form.street_address(size=120) }}<br>
+        </p>
+        <p>
+          City :<br>
+          {{ form.city(size=120) }}<br>
+        </p>
+        <p>
+          State :<br>
+          {{ form.state(size=120) }}<br>
+        </p>
+        <p>
+          Zip_code :<br>
+          {{ form.zip_code(size=120) }}<br>
+        </p>
+         <p>
+          Country :<br>
+          {{ form.country(size=120) }}<br>
+        </p>
+      </div>
+      <h2>Add Customer Order </h2>
+      <div class="divider"></div>
+      <div class="section">
+        <!-- Additional form fields for the Address should go here -->
+          <p>
+          Parts_ordered :<br>
+          {{ form.parts_ordered(size=120) }}<br>
+         </p>
+         <p>
+          Total_Spent :<br>
+          {{ form.total_spent(size=120) }}<br>
+         </p>
+        </div>
+
+
+
+
+
+
+
+
+      <p><input type="submit" value="Create Customer"></p>
+    </form>
+  </div>
+</div>
+{% endblock %}
